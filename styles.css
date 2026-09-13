@@ -155,8 +155,7 @@ h3{font-size:2rem}
 .contact-section{padding-top:72px;padding-bottom:110px}
 .contact-box-finished{align-items:center}
 .contact-box-finished h2{margin:12px 0 18px;font-size:clamp(2.2rem,4vw,4rem);line-height:1;color:var(--green)}
-.contact-box-finished .email-pill{margin-top:6px;color:var(--green);font-weight:600;transition:.2s}
-.contact-box-finished .email-pill:hover{border-color:var(--gold);background:rgba(190,151,78,.08)}
+.contact-box-finished .email-pill{margin-top:6px;color:var(--green);font-weight:600}
 .contact-note{padding-left:44px;border-left:1px solid var(--line)}
 .contact-note h3{margin-top:0}
 
