@@ -176,9 +176,21 @@ h3{font-size:2rem}
     linear-gradient(90deg, rgba(250,247,240,.96) 0%, rgba(250,247,240,.90) 34%, rgba(250,247,240,.35) 54%, rgba(250,247,240,0) 72%),
     url("assets/hero.jpg") center right/cover no-repeat;
 }
+.hero::before{
+  content:"";
+  position:absolute;
+  inset:0 auto 0 0;
+  width:clamp(180px,30vw,500px);
+  background:url("assets/hero-left-foliage.png") left center/auto 104% no-repeat;
+  opacity:.34;
+  pointer-events:none;
+  z-index:0;
+}
 .hero-grid{
   grid-template-columns:minmax(0, 0.95fr) minmax(320px, 1.05fr);
   min-height:82vh;
+  position:relative;
+  z-index:1;
 }
 .hero-art{display:none}
 .hero-copy{padding:48px 0}
@@ -204,6 +216,10 @@ h3{font-size:2rem}
     background:
       linear-gradient(rgba(250,247,240,.93), rgba(250,247,240,.93)),
       url("assets/hero.jpg") center/cover no-repeat;
+  }
+  .hero::before{
+    width:min(46vw,300px);
+    opacity:.18;
   }
   .hero-grid{grid-template-columns:1fr;min-height:auto}
   .hero-copy{padding:70px 0}
@@ -504,9 +520,11 @@ h3{font-size:2rem}
   overflow:hidden;
 }
 .genre-visual{
-  aspect-ratio:2.75 / 1;
-  background-size:cover;
+  /* Match the source artwork so its lower typography is never cropped. */
+  aspect-ratio:1200 / 658;
+  background-size:100% 100%;
   background-position:center;
+  background-repeat:no-repeat;
 }
 .genre-card-body{
   padding:28px 28px 30px;
