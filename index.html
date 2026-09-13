@@ -1,13 +1,170 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
+  <title>The Ladybug Collective</title>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Ladybug Collective</title>
-</head>
+  <meta name="description" content="The Ladybug Collective celebrates independently published books, the authors behind them, and the stories worth discovering.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 
+</head>
 <body>
-  <h1>The Ladybug Collective</h1>
-  <p>Celebrating independently published books, the authors behind them, and the stories worth discovering.</p>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html">
+      <img class="brand-logo" src="assets/ladybug-logo.png" alt="">
+      <span class="brand-copy">
+        <span class="brand-name"><span class="brand-the">The</span> <span class="brand-main">Ladybug Collective</span></span>
+        <span class="brand-tagline">Different Stories. A Shared Home.</span>
+      </span>
+    </a>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="books.html">Books</a>
+      <a href="news.html">News</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <div class="eyebrow">An independent book collective</div>
+        <h1>Stories worth discovering.</h1>
+        <p>Distinctive voices. Unforgettable stories. Independently published books across genres—all gathered in one place.</p>
+        <div class="actions">
+          <a class="btn primary" href="books.html">Explore the books</a>
+          <a class="btn" href="about.html">About the collective</a>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">Featured books</div>
+          <h2>Different genres.<br>One place to find them.</h2>
+        </div>
+        <p>The Ladybug Collective is a home for independently published books presented under distinct author names and voices.</p>
+      </div>
+      <div class="book-grid">
+        <article class="book-card">
+          <div class="book-cover ashes">Ashes Beneath<br>Montgomery Manor</div>
+          <div class="book-card-content">
+            <div class="kicker">Gothic Romance · S. E. Breazeale</div>
+            <h3>Ashes Beneath Montgomery Manor</h3>
+            <p>Secrets linger in the walls of Montgomery Manor. When the past refuses to stay buried, one woman returns home to uncover the truth.</p>
+            <a class="text-link" href="books.html#ashes">Discover the book</a>
+          </div>
+        </article>
+        <article class="book-card">
+          <div class="book-cover memoir">Life, Loss,<br>& Ladybugs</div>
+          <div class="book-card-content">
+            <div class="kicker">Memoir · Shanon Johnson</div>
+            <h3>Life, Loss, & Ladybugs</h3>
+            <p>A deeply personal memoir about love, grief, memory, resilience, and the small signs that can carry meaning through life’s hardest seasons.</p>
+            <a class="text-link" href="books.html#memoir">Discover the book</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt genre-section">
+    <div class="container">
+      <div class="genre-heading">
+        <div class="genre-heading-line"></div>
+        <div>
+          <div class="eyebrow centered">Explore by genre</div>
+          <h2>Every story has its own world.</h2>
+        </div>
+        <div class="genre-heading-line"></div>
+      </div>
+
+      <div class="genre-grid visual-genres">
+        <article class="genre-card-image">
+          <div class="genre-visual" style="background-image:url('assets/genre-memoir.jpg')"></div>
+          <div class="genre-card-body">
+            <div class="kicker">Memoir</div>
+            <h3>Real life. Lasting truths.</h3>
+            <p>Personal stories shaped by memory, love, loss, resilience, and the symbols we carry with us.</p>
+            <div class="genre-book"><em>Life, Loss, &amp; Ladybugs</em><br><span>Shanon Johnson</span></div>
+            <a class="text-link" href="books.html#memoir">Explore memoir</a>
+          </div>
+        </article>
+
+        <article class="genre-card-image dark">
+          <div class="genre-visual" style="background-image:url('assets/genre-gothic.jpg')"></div>
+          <div class="genre-card-body">
+            <div class="kicker">Gothic Romance</div>
+            <h3>Dark places. Deeper emotions.</h3>
+            <p>Romance shadowed by family history, old places, buried truths, and the things that refuse to stay forgotten.</p>
+            <div class="genre-book"><em>Ashes Beneath Montgomery Manor</em><br><span>S. E. Breazeale</span></div>
+            <a class="text-link" href="books.html#ashes">Explore gothic romance</a>
+          </div>
+        </article>
+
+        <article class="genre-card-image">
+          <div class="genre-visual" style="background-image:url('assets/genre-contemporary.jpg')"></div>
+          <div class="genre-card-body">
+            <div class="kicker">Contemporary Romance</div>
+            <h3>Modern love. Unexpected turns.</h3>
+            <p>Warm, contemporary stories about connection, reinvention, and finding love in a complicated modern world.</p>
+            <div class="genre-book"><em>Project ALIGN</em><br><span>In development</span></div>
+            <span class="coming-label">Coming later</span>
+          </div>
+        </article>
+      </div>
+
+      <div class="genre-closing">Different genres. The same love of a good story.</div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container statement">
+      <div class="quote">Independent stories deserve a beautiful place to be found.</div>
+      <div>
+        <p>The Ladybug Collective is a creative home for independently published books. It brings different genres and author identities together in one place while leaving room to celebrate other independent authors and the stories readers may not have discovered yet.</p>
+        <a class="btn" style="border-color:#f3eee3;color:#f3eee3" href="about.html">Our approach</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">From the collective</div>
+          <h2>News & notes.</h2>
+        </div>
+        <p>New releases, behind-the-scenes updates, independent publishing notes, and occasional author features.</p>
+      </div>
+      <div class="news-grid">
+        <article class="news-card"><time>September 2026</time><h3>Now available: Ashes Beneath Montgomery Manor</h3><p>The latest release from S. E. Breazeale.</p></article>
+        <article class="news-card"><time>Coming soon</time><h3>More from The Ladybug Collective</h3><p>Future books, new genres, and more independent voices.</p></article>
+        <article class="news-card"><time>Independent spotlight</time><h3>A place to discover indie authors</h3><p>We’re exploring thoughtful ways to feature independently published authors without becoming their publisher.</p></article>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div>© 2026 The Ladybug Collective</div>
+    <div>Independent stories. Distinctive voices. One shared home.</div>
+  </div>
+</footer>
+
 </body>
 </html>
