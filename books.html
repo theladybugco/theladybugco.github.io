@@ -3,6 +3,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="The Ladybug Collective celebrates independently published books, the authors behind them, and the stories worth discovering.">
+  <link rel="icon" type="image/png" href="assets/ladybug-logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -19,7 +20,7 @@
     </a>
     <nav class="nav">
       <a href="index.html">Home</a>
-      <a href="books.html">Books</a>
+      <a class="active" href="books.html" aria-current="page">Books</a>
       <a href="news.html">News</a>
       <a href="about.html">About</a>
       <a href="contact.html">Contact</a>
@@ -39,7 +40,7 @@
     <div class="container books-display">
       <article class="book-feature" id="ashes">
         <div class="feature-cover">
-          <div class="book-cover ashes" aria-label="Ashes Beneath Montgomery Manor book cover"></div>
+          <div class="book-cover ashes" role="img" aria-label="Cover of Ashes Beneath Montgomery Manor"></div>
         </div>
         <div class="feature-copy">
           <div class="kicker">Gothic Romance</div>
@@ -55,7 +56,7 @@
 
       <article class="book-feature reverse" id="memoir">
         <div class="feature-cover">
-          <div class="book-cover memoir" aria-label="Life, Loss, & Ladybugs book cover"></div>
+          <div class="book-cover memoir" role="img" aria-label="Cover of Life, Loss, and Ladybugs"></div>
         </div>
         <div class="feature-copy">
           <div class="kicker">Memoir</div>

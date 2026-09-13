@@ -106,7 +106,7 @@ h3{font-size:2rem}
   min-height:100%;
   display:grid;place-items:center;padding:20px;text-align:center;font-family:var(--serif);font-size:1.6rem
 }
-.book-cover.ashes{background-image:url("assets/ashes-cover.jpg")}
+.book-cover.ashes{background-image:url("assets/ashes-cover.png")}
 .book-cover.memoir{background-image:url("assets/memoir-cover.jpg")}
 .book-card-content{padding:34px}
 .kicker{font-size:.76rem;text-transform:uppercase;letter-spacing:.14em;color:var(--rose);font-weight:700}
@@ -168,7 +168,18 @@ h3{font-size:2rem}
 .prose p{font-size:1.08rem;color:var(--ink-soft)}
 
 @media(max-width:900px){
-  .nav{display:none}
+  .header-inner{flex-wrap:wrap;padding:12px 0 0}
+  .brand{margin:auto}
+  .nav{
+    display:flex;
+    order:2;
+    width:100%;
+    justify-content:space-between;
+    gap:10px;
+    border-top:1px solid rgba(180,154,102,.18);
+  }
+  .nav a{padding:12px 2px 14px;font-size:.72rem}
+  .nav a:after{bottom:8px}
   .hero-grid,.statement,.contact-box{grid-template-columns:1fr}
   .hero-art{min-height:360px}
   .book-grid,.author-grid,.news-grid{grid-template-columns:1fr}
