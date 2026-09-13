@@ -788,6 +788,16 @@ h3{font-size:2rem}
   text-transform:uppercase;
   border-bottom:1px solid var(--gold);
 }
+.project-note{
+  max-width:680px;
+  margin:34px 0 20px;
+  padding:17px 20px;
+  border-left:2px solid var(--gold);
+  background:rgba(183,155,99,.08);
+  color:var(--ink-soft);
+  font-size:.88rem;
+  font-style:italic;
+}
 @media(max-width:800px){
   .book-detail{padding:62px 0 78px}
   .book-detail-grid{grid-template-columns:1fr;gap:54px}
