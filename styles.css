@@ -829,7 +829,8 @@ h3{font-size:2rem}
   align-items:center;
 }
 .about-block h2,.about-growth h2{
-  font-size:clamp(2.8rem,5vw,4.7rem);
+  font-size:clamp(2.25rem,3.5vw,3.4rem);
+  line-height:1.08;
 }
 .about-block p,.about-growth p{
   color:var(--ink-soft);
