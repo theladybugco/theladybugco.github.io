@@ -809,3 +809,68 @@ h3{font-size:2rem}
   .book-detail-cover .book-cover{width:min(260px,72vw)}
   .book-detail-copy{padding-top:0}
 }
+
+/* === About page === */
+.about-hero{padding:72px 0 68px}
+.about-hero h1{
+  max-width:900px;
+  font-size:clamp(3.8rem,7vw,6.7rem);
+}
+.about-hero p{
+  max-width:780px;
+  margin-bottom:0;
+  font-size:1.18rem;
+}
+.about-section{padding-top:88px;padding-bottom:88px}
+.about-grid{
+  display:grid;
+  grid-template-columns:minmax(0,1.15fr) minmax(300px,.85fr);
+  gap:clamp(52px,8vw,110px);
+  align-items:center;
+}
+.about-block h2,.about-growth h2{
+  font-size:clamp(2.8rem,5vw,4.7rem);
+}
+.about-block p,.about-growth p{
+  color:var(--ink-soft);
+  font-size:1.08rem;
+  line-height:1.85;
+}
+.about-principle{
+  padding:54px 46px;
+  background:var(--ink);
+  color:var(--paper);
+  box-shadow:var(--shadow);
+}
+.about-principle span{
+  font-size:.72rem;
+  font-weight:600;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+  color:#dbc89e;
+}
+.about-principle blockquote{
+  margin:26px 0 0;
+  font-family:var(--serif);
+  font-size:clamp(2.1rem,4vw,3.4rem);
+  line-height:1.08;
+}
+.about-growth{
+  display:grid;
+  grid-template-columns:minmax(260px,.75fr) minmax(0,1.25fr);
+  gap:clamp(48px,8vw,110px);
+  align-items:start;
+}
+.about-note{
+  margin:24px 0 30px;
+  padding-left:18px;
+  border-left:2px solid var(--gold);
+  font-size:.9rem !important;
+  font-style:italic;
+}
+@media(max-width:800px){
+  .about-hero{padding:56px 0 52px}
+  .about-grid,.about-growth{grid-template-columns:1fr}
+  .about-principle{padding:42px 34px}
+  .about-section{padding-top:70px;padding-bottom:70px}
+}
