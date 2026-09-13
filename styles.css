@@ -202,6 +202,10 @@ h3{font-size:2rem}
 }
 .book-cover.ashes{background-image:url("assets/ashes-cover.png")}
 .book-cover.memoir{background-image:url("assets/memoir-cover.jpg")}
+.book-cover.align{
+  aspect-ratio:2 / 3;
+  background-image:url("assets/project-align-cover.png");
+}
 .book-cover{
   background-position:center;
   background-size:cover;
