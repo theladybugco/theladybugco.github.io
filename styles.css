@@ -1131,3 +1131,7 @@ h3{font-size:2rem}
   .news-entry-card{grid-template-columns:1fr}
   .news-entry-card img{width:min(180px,60vw);margin:auto}
 }
+
+/* Footer social icons */
+.footer-connect a { display: inline-flex; align-items: center; gap: 10px; }
+.footer-icon { flex: 0 0 18px; width: 18px; height: 18px; color: var(--ink); }
