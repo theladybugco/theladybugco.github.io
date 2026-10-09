@@ -159,8 +159,87 @@ h3{font-size:2rem}
 .contact-note{padding-left:44px;border-left:1px solid var(--line)}
 .contact-note h3{margin-top:0}
 
-.site-footer{border-top:1px solid var(--line);padding:42px 0;background:#f7f2e8}
-.footer-inner{display:flex;justify-content:space-between;gap:30px;align-items:center;font-size:.85rem;color:var(--ink-soft)}
+
+/* FOOTER */
+
+.site-footer {
+  border-top: 1px solid var(--line);
+  padding: 48px 0 28px;
+  background: #f7f2e8;
+}
+
+.footer-inner {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr 1.3fr;
+  column-gap: 48px;
+  row-gap: 30px;
+  align-items: start;
+  font-size: 0.9rem;
+  color: var(--ink-soft);
+}
+
+.footer-brand strong {
+  display: block;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 8px;
+}
+
+.footer-brand p {
+  margin: 0;
+  font-size: 0.85rem;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.footer-connect {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.footer-links a,
+.footer-connect a {
+  color: var(--ink-soft);
+  text-decoration: none;
+}
+
+.footer-links a:hover,
+.footer-connect a:hover {
+  color: var(--ink);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.footer-bottom {
+  grid-column: 1 / -1;
+  border-top: 1px solid var(--line);
+  padding-top: 20px;
+  text-align: center;
+  font-size: 0.78rem;
+}
+
+/* Mobile footer */
+@media (max-width: 700px) {
+  .footer-inner {
+    grid-template-columns: 1fr;
+    gap: 26px;
+  }
+
+  .footer-bottom {
+    grid-column: 1;
+    text-align: left;
+  }
+}
+
 
 .page-hero{padding:100px 0 70px;background:var(--cream);border-bottom:1px solid var(--line)}
 .page-hero p{max-width:720px;font-size:1.18rem;color:var(--ink-soft)}
